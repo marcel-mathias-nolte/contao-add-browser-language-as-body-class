@@ -2,7 +2,7 @@
     "name": "marcel-mathias-nolte/contao-add-browser-language-as-body-class",
     "type": "contao-bundle",
     "description": "Add a class for the browsers accepted language to the body element and add a insert tag for it",
-    "homepage": "https://github.com/marcel-mathias-noltee",
+    "homepage": "https://github.com/marcel-mathias-nolte",
     "license": "LGPL-3.0-or-later",
     "authors": [
         {
@@ -32,7 +32,7 @@
         }
     },
     "support": {
-        "issues": "https://github.com/marcel-mathias-nolte/contao4-base/issues",
-        "source": "https://github.com/marcel-mathias-nolte/contao4-base"
+        "issues": "https://github.com/marcel-mathias-nolte/contao-add-browser-language-as-body-class/issues",
+        "source": "https://github.com/marcel-mathias-nolte/contao-add-browser-language-as-body-class"
     }
 }
