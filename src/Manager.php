@@ -17,7 +17,7 @@ use Contao\LayoutModel;
 use Contao\PageModel;
 use Contao\Frontend;
 
-class Manager extends Frontend
+class Manager 
 {
     protected static $strBrowserLanguage = '';
 
