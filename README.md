@@ -11,5 +11,3 @@ You can use the following insert tags:
    If browser language ...
  * {{ifnblng::<language>}} ... {{ifnblng}}
    If not browser language
-
-You can react on multiple languages at once: de,fr

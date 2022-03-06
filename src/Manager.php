@@ -17,7 +17,7 @@ use Contao\LayoutModel;
 use Contao\PageModel;
 use Contao\Frontend;
 
-class Manager 
+class Manager
 {
     protected static $strBrowserLanguage = '';
 
@@ -29,8 +29,9 @@ class Manager
     public static function detectBrowserLanguage() {
         global $objPage;
         if ($objPage == null) return false;
-        if (trim($objPage->mmnDetectableLanguages) == '') return false;
-        $languages = explode(',', $objPage->mmnDetectableLanguages);
+        $objRootpage = PageModel::findByPk($objPage->rootId);
+        if (trim($objRootpage->mmnDetectableLanguages) == '') return false;
+        $languages = explode(',', $objRootpage->mmnDetectableLanguages);
         $header = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
         foreach($header as $lang) {
             if(in_array($lang, $languages)) {
@@ -38,14 +39,14 @@ class Manager
                 return true;
             }
         }
-        if (trim($objPage->mmnFallbackLanguage) == '') return false;
-        self::$strBrowserLanguage = $objPage->mmnFallbackLanguage;
+        if (trim($objRootpage->mmnFallbackLanguage) == '') return false;
+        self::$strBrowserLanguage = $objRootpage->mmnFallbackLanguage;
         return true;
     }
 
     public static function addBodyClass() {
         global $objPage;
-        $objPage->class .= self::$strBrowserLanguage;
+        $objPage->cssClass .= ' ' . self::$strBrowserLanguage;
     }
 
     /**
