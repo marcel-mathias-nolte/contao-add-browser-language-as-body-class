@@ -1,50 +1,15 @@
-# Contao 4 skeleton bundle
+# Contao 4 Add Browser Language As Body Class Bundle
 
-Contao is an Open Source PHP Content Management System for people who want a
-professional website that is easy to maintain. Visit the [project website][1]
-for more information.
+Adds a class depending on the browser's accepted language to the body element.
+You can define the used languages and the fallback language on every root page.
 
-This is my fork of the official skeleton bundle prepared for my own bundles
+## Insert tags
 
-You can use the skeleton bundle as basis for your own Contao bundle.
+You can use the following insert tags:
 
-## Install
+ * {{ifblng::<language>}} ... {{ifblng::<secondlanguage>}} .. {{ifblng}}
+   If browser language ...
+ * {{ifnblng::<language>}} ... {{ifnblng}}
+   If not browser language
 
-Download the skeleton bundle:
-
-```bash
-wget https://github.com/marcel-mathias-nolte/contao4-base/archive/master.zip
-unzip master.zip
-mv skeleton-bundle-master [package name]
-cd [package name]
-```
-
-## Customize
-
-First adjust the following files:
-
- * `.php_cs.php`
- * `composer.json`
- * `phpunit.xml.dist`
- * `README.md`
-
-Then rename the following files and/or the references to `SkeletonBundle` in
-the following files:
-
- * `src/ContaoManager/Plugin.php`
- * `src/DependencyInjection/ContaoSkeletonExtension.php`
- * `src/ContaoSkeletonBundle.php`
- * `tests/ContaoSkeletonBundleTest.php`
-
-Finally add your custom classes and resources.
-
-## Release
-
-Run the PHP-CS-Fixer and the unit test before you release your bundle:
-
-```bash
-vendor/bin/php-cs-fixer fix -v
-vendor/bin/phpunit
-```
-
-[1]: https://contao.org
+You can react on multiple languages at once: de,fr

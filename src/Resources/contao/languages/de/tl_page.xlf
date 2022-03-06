@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/tl_member.php" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="tl_page.mmnDetectableLanguages.0">
+                <source>Languages to detect</source>
+                <target>Zu erkennende Sprachen</target>
+            </trans-unit>
+            <trans-unit id="tl_page.mmnDetectableLanguages.1">
+                <source>Please enter the languages to detect</source>
+                <target>Bitte geben Sie die zu erkennenden Sprachen ein</target>
+            </trans-unit>
+            <trans-unit id="tl_page.mmnFallbackLanguage.0">
+                <source>Fallback language</source>
+                <target>Fallback-Sprache</target>
+            </trans-unit>
+            <trans-unit id="tl_page.mmnFallbackLanguage.1">
+                <source>Please enter a fallback language</source>
+                <target>Bitte geben Sie eine Fallback-Sprache an</target>
+            </trans-unit>
+            <trans-unit id="tl_page.browser_language_detection_legend">
+                <source>Browser language detection</source>
+                <target>Browser-Sprachen-Erkennung</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
