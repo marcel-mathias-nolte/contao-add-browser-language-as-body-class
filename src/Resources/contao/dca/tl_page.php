@@ -15,3 +15,4 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['mmnFallbackLanguage'] = array
     'sql'                     => "varchar(2) NOT NULL default 'en'"
 );
 $GLOBALS['TL_DCA']['tl_page']['palettes']['root'] .= ';{browser_language_detection_legend},mmnDetectableLanguages,mmnFallbackLanguage';
+$GLOBALS['TL_DCA']['tl_page']['palettes']['rootfallback'] .= ';{browser_language_detection_legend},mmnDetectableLanguages,mmnFallbackLanguage';
