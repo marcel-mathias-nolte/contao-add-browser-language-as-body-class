@@ -88,6 +88,7 @@ class Manager
     private function parseConditionalTags(array $chunks, array $tags, int &$_rit, int &$_cnt)
     {
         if (
+            count($chunks) > 1 &&
             ($chunks[0] == 'ifblng' && Manager::$strBrowserLanguage != $chunks[1]) ||
             ($chunks[0] == 'ifnblng' && Manager::$strBrowserLanguage == $chunks[1])
         ) {
